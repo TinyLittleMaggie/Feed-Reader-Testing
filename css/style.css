@@ -9,8 +9,7 @@ html {
 }
 
 body {
-    color: #111;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     margin: 0;
 }
@@ -21,26 +20,30 @@ a {
 }
 
 a:hover h2 {
-    text-decoration: underline;
+    color: #8bbabb;
 }
 
 h1 {
     display: inline-block;
-    font-weight: 100;
-    margin: 0 0 0 0.5em;
+    font-weight: 700;
+    font-size: 1.8em;
+    margin: 0.2em 0 0 0.5em;
 }
 
 h2 {
+    color: #464159;
     font-weight: 400;
-    margin: 0;
+    font-size: 1.4em;
+    margin: 0 0.2em 0;
 }
 
 .header {
-    background: #4caf50;
+    background: #6c7b95;
     color: #fff;
     position: fixed;
     top: 0;
     width: 100%;
+    height: 3em;
     padding: 0.5em 1em;
 }
 
@@ -51,9 +54,9 @@ h2 {
 
 .slide-menu {
     position: absolute;
-    top: 3.5em;
+    top: 4.2em;
     padding: 1em;
-    background: #4caf50;
+    background: #8bbabb;
     height: 100%;
     width: 10em;
     transform: translate3d(0, 0, 0);
@@ -76,17 +79,21 @@ h2 {
     padding: 0.5em 0;
 }
 
+.slide-menu li a:hover {
+  text-decoration: underline;
+}
+
 .menu-hidden .slide-menu {
     transform: translate3d(-12em, 0, 0);
     transition: transform 0.2s;
 }
 
 .feed {
-    margin: 4em 0 0;
+    margin: 4.5em 3.5em 0;
 }
 
 .entry {
-    border-bottom: 1px solid #ddd;
-    padding: 1em;
+    border-bottom: 1px solid #c7f0db;
+    padding: 0.8em 0 0.4em;
     margin: 0.5em 0;
 }
