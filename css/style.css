@@ -58,7 +58,7 @@ h2 {
     padding: 1em;
     background: #8bbabb;
     height: 100%;
-    width: 10em;
+    width: 13em;
     transform: translate3d(0, 0, 0);
     transition: transform 0.2s;
 }
@@ -75,8 +75,9 @@ h2 {
 
 .slide-menu li a {
     color: #fff;
+    font-size: 1.3em;
     display: block;
-    padding: 0.5em 0;
+    padding: 0.5em 0.8em;
 }
 
 .slide-menu li a:hover {
@@ -84,12 +85,12 @@ h2 {
 }
 
 .menu-hidden .slide-menu {
-    transform: translate3d(-12em, 0, 0);
+    transform: translate3d(-15em, 0, 0);
     transition: transform 0.2s;
 }
 
 .feed {
-    margin: 4.5em 3.5em 0;
+    margin: 4.5em 3.8em 0;
 }
 
 .entry {
