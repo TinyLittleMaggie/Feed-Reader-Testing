@@ -63,7 +63,7 @@ h2 {
     padding: 1em;
     background: #8bbabb;
     height: 100%;
-    width: 16em;
+    width: 18em;
     transform: translate3d(0, 0, 0);
     transition: transform 0.2s;
 }
@@ -90,7 +90,7 @@ h2 {
 }
 
 .menu-hidden .slide-menu {
-    transform: translate3d(-16em, 0, 0);
+    transform: translate3d(-18em, 0, 0);
     transition: transform 0.2s;
 }
 
