@@ -4,4 +4,4 @@ This is the 4th project of Udacity's Front-End Web Development Nanodegree Progra
 
 ## How to Run the Application
 
-Open the `index.html` file, and wait for it to load. The test results can be found at the bottom of the page. 
+Clone the repository to a local directory, open the `index.html` file in a browser, and wait for it to load. (Alternatively, access the online version [here](https://tinylittlemaggie.github.io/Feed-Reader-Testing)!) The test results can be found at the bottom of the page. 
