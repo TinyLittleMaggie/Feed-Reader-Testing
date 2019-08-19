@@ -80,7 +80,7 @@ $(function() {
      * its work, there is at least a single .entry element within
      * the .feed container.
      */
-     
+
      beforeEach(function(done) {
        loadFeed(0, function() {
          done();
@@ -94,10 +94,28 @@ $(function() {
 
   });
 
-  /* TODO: Write a new test suite named "New Feed Selection" */
+  /* "New Feed Selection" Test Suite */
+  describe('New Feed Selection', function() {
 
-  /* TODO: Write a test that ensures when a new feed is loaded
-   * by the loadFeed function that the content actually changes.
-   * Remember, loadFeed() is asynchronous.
-   */
+    var feed1, feed2;
+    /* Ensure that when a new feed is loaded
+     * by the loadFeed function, the content actually changes.
+     */
+     beforeEach(function(done) {
+       loadFeed(0, function() {
+         feed1 = $('.feed').html();
+         loadFeed(1, function() {
+           feed2 = $('.feed').html();
+           done();
+         });
+       });
+     });
+
+     it('is different from the old', function(done) {
+       expect(feed1).not.toBe(feed2);
+       done();
+     });
+
+  });
+
 }());
