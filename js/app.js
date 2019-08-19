@@ -127,9 +127,15 @@ $(function() {
     feedList.on('click', 'a', function() {
         var item = $(this);
 
+        // hide the menu:
         $('body').addClass('menu-hidden');
+
+        // format the selected feed differently
+        // so that it stands out from the rest:
         $('a').removeClass('selectedFeed');
         $('[data-id=' + item.data('id') + ']').addClass('selectedFeed');
+
+        // load the feed
         loadFeed(item.data('id'));
         return false;
     });
