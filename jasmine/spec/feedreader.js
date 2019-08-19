@@ -11,7 +11,7 @@
 
 // Change the default timeout in case the internet is slow
 // and the test is long-running
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 15000;
 
 $(function() {
   /* This is our first test suite - a test suite just contains
