@@ -8,6 +8,11 @@
  * since some of these tests may require DOM elements. We want
  * to ensure they don't run until the DOM is ready.
  */
+
+// Change the default timeout in case the internet is slow
+// and the test is long-running
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+
 $(function() {
   /* This is our first test suite - a test suite just contains
    * a related set of tests. This suite is all about the RSS
