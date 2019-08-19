@@ -20,6 +20,9 @@ var allFeeds = [
     }, {
         name: 'Linear Digressions',
         url: 'http://feeds.feedburner.com/udacity-linear-digressions'
+    }, {
+        name: 'Scientific American',
+        url: 'http://rss.sciam.com/ScientificAmerican-Global'
     }
 ];
 
@@ -44,6 +47,7 @@ function init() {
      var feedUrl = allFeeds[id].url,
          feedName = allFeeds[id].name;
 
+     // Perform an asynchronous HTTP (Ajax) request.
      $.ajax({
        type: "POST",
        url: 'https://rsstojson.udacity.com/parseFeed',
@@ -112,6 +116,10 @@ $(function() {
         feedId++;
     });
 
+    // The first feed is selected by default, so we select it to
+    // format it differently from the others
+    $('[data-id=0]').addClass('selectedFeed');
+
     /* When a link in our feedList is clicked on, we want to hide
      * the menu, load the feed, and prevent the default action
      * (following the link) from occurring.
@@ -120,6 +128,8 @@ $(function() {
         var item = $(this);
 
         $('body').addClass('menu-hidden');
+        $('a').removeClass('selectedFeed');
+        $('[data-id=' + item.data('id') + ']').addClass('selectedFeed');
         loadFeed(item.data('id'));
         return false;
     });

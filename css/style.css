@@ -23,6 +23,11 @@ a:hover h2 {
     color: #8bbabb;
 }
 
+a.selectedFeed {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 h1 {
     display: inline-block;
     font-weight: 700;
@@ -43,7 +48,7 @@ h2 {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 3em;
+    height: 4em;
     padding: 0.5em 1em;
 }
 
@@ -58,7 +63,7 @@ h2 {
     padding: 1em;
     background: #8bbabb;
     height: 100%;
-    width: 13em;
+    width: 16em;
     transform: translate3d(0, 0, 0);
     transition: transform 0.2s;
 }
@@ -85,7 +90,7 @@ h2 {
 }
 
 .menu-hidden .slide-menu {
-    transform: translate3d(-15em, 0, 0);
+    transform: translate3d(-16em, 0, 0);
     transition: transform 0.2s;
 }
 
