@@ -14,17 +14,12 @@
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 15000;
 
 $(function() {
-  /* This is our first test suite - a test suite just contains
-   * a related set of tests. This suite is all about the RSS
-   * feeds definitions, the allFeeds variable in our application.
-   */
+
+  /* The "RSS Feeds" Test Suite  */
   describe('RSS Feeds', function() {
-    /* This is our first test - it tests to make sure that the
-     * allFeeds variable has been defined and that it is not
-     * empty. Experiment with this before you get started on
-     * the rest of this project. What happens when you change
-     * allFeeds in app.js to be an empty array and refresh the
-     * page?
+    
+    /* Make sure that the allFeeds variable has been defined
+     * and that it is not empty.
      */
     it('are defined', function() {
       expect(allFeeds).toBeDefined();
