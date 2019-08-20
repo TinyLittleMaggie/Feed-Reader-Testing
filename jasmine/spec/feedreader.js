@@ -87,13 +87,11 @@ $(function() {
      */
 
      beforeEach(function(done) {
-       loadFeed(0, function() {
-         done();
-       });
+       loadFeed(0, done);
      });
 
      it('at least one entry exists', function(done) {
-       expect($('.feed').children().length).toBeGreaterThan(0);
+       expect($('.feed .entry').length).toBeGreaterThan(0);
        done();
      });
 
